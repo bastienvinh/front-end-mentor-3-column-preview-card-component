@@ -1,0 +1,81 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 275px;
+  height: 450px;
+
+  padding: 40px;
+
+  img {
+    height: 35px;
+    width: 60px;
+  }
+
+  h3 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    width: 100%;
+    color: white;
+  }
+
+  p {
+    font-size: 14px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+  }
+
+  a {
+    margin-top: 30px;
+    height: 45px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    &:hover {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+  }
+}
+
+[data-color="orange"] {
+  background-color: hsl(31, 77%, 52%);
+
+  a {
+    color: hsl(31, 77%, 52%);
+  }
+}
+
+[data-color="cyan"] {
+  background-color: hsl(184, 100%, 22%);
+
+  a {
+    color: hsl(184, 100%, 22%);
+  }
+}
+
+[data-color="dark-cyan"] {
+  background-color: hsl(179, 100%, 13%);
+
+  a {
+    color: hsl(179, 100%, 13%);
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .card {
+    width: 100%;
+
+    h3 {
+      font-size: 35px;
+    }
+  }
+}
